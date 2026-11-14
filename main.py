@@ -1,6 +1,8 @@
-def count_items(nums):
-    if nums == []:
-        return 0
-    return 1 + count_items(nums[1:])
+def selection_sort(arr):
+    for i in range(len(arr)):
+        m = i
+        for j in range(i + 1, len(arr)):
+            arr[i], arr[m] = arr[m], arr[i]
+            return arr
 
-print(count_items([ 6, 2, 4, 5,]))
+        print(selection_sort([5, 2, 9, 1, 5, 6]))
