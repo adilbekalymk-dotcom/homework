@@ -1,11 +1,6 @@
-book = {
-    "wemmbu": "055567384",
-    "flame": "0658484845",
-    "sherlock": "0658484845",
-    "harry potter": "0658484845",
-}
-name = input("Enter the name: ")
-if name in book:
-    print(book[name])
-else:
-    print("Name not found in the book.")
+def count_items(nums):
+    if nums == []:
+        return 0
+    return 1 + count_items(nums[1:])
+
+print(count_items([ 6, 2, 4, 5,]))
